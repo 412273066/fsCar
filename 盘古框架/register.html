@@ -17,6 +17,35 @@
 
 	<body>
 		<div class="f-w-h-100 ">
+			<div class="m-reg-title">
+				<img src="content/images/package.png" /> 套餐选择
+			</div>
+			<div class="m-reg-radio">
+				<form class="mui-input-group">
+					<div class="mui-input-row mui-radio mui-left">
+						<label class="radio-label" for="tc1">套餐1<p><a href="#popover" tc-desc="套餐1包含免费洗车1年，免费维修1年，免费打气3个月，免费送水1个月">396元<img src="content/images/arrow.png"/></a></p></label>
+						<input id="tc1" name="tc" type="radio" value="1" fee="396" vip="VIP1" checked>
+					</div>
+					<div class="f-horizontal-line"></div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label class="radio-label" for="tc2">套餐2<p><a href="#popover" tc-desc="套餐2包含免费洗车2年，免费维修2年，免费打气6个月，免费送水1个月">700元<img src="content/images/arrow.png"/></a></p></label>
+						<input id="tc2" name="tc" type="radio" value="2" fee="700" vip="VIP2" >
+					</div>
+					<div class="f-horizontal-line"></div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label class="radio-label" for="tc3">套餐3<p><a href="#popover" tc-desc="套餐3包含免费洗车3年，免费维修3年，免费打气9个月，免费送水2个月">1400元<img src="content/images/arrow.png"/></a></p></label>
+						<input id="tc3" name="tc" type="radio" value="3" fee="1400" vip="VIP3" >
+					</div>
+					<div class="f-horizontal-line"></div>
+					<div class="mui-input-row mui-radio mui-left">
+						<label class="radio-label" for="tc4">套餐4<p><a href="#popover" tc-desc="套餐4包含免费洗车5年，免费维修5年，免费打气5个月，免费送水7个月">450元<img src="content/images/arrow.png"/></a></p></label>
+						<input id="tc4" name="tc" type="radio" value="4" fee="450" vip="VIP4" >
+					</div>
+				</form>
+			</div>
+			<div class="m-reg-title">
+				<img src="content/images/user-info-tit.png" /> 会员信息
+			</div>
 			<div class="m-reg">
 				<div class="clearfix">
 					<label class="reg-label">会员名称</label>
@@ -29,8 +58,14 @@
 				</div>
 				<div class="f-horizontal-line"></div>
 				<div class="clearfix">
+					<label class="reg-label">驾驶证号码</label>
+					<input id="licenseNo" class="reg-input" type="text" placeholder="请输入驾驶证号码" style="width: 50%;" />
+					<label id="licenseRes" class="reg-label">&nbsp;</label>
+				</div>
+				<div class="f-horizontal-line"></div>
+				<div class="clearfix">
 					<label class="reg-label">生日日期</label>
-					<input id="birthday" class="reg-input" type="text" placeholder="请输入生日日期" readonly="readonly" data-options='{"type":"date"}' />
+					<input id="birthday" class="reg-input" type="text" placeholder="输入驾驶证后生成" readonly="readonly" data-options='{"type":"date"}' />
 				</div>
 				<div class="f-horizontal-line"></div>
 				<!--<div class="clearfix">
@@ -38,17 +73,11 @@
 					<input id="idCardNo" class="reg-input" type="text" placeholder="请输入身份证号码" />
 				</div>
 				<div class="f-horizontal-line"></div>-->
-				<div class="clearfix">
+				<!--<div class="clearfix">
 					<label class="reg-label">行驶证号码</label>
 					<input id="xszNo" class="reg-input" type="text" placeholder="请输入行驶证号码" />
 				</div>
-				<div class="f-horizontal-line"></div>
-				<div class="clearfix">
-					<label class="reg-label">驾驶证号码</label>
-					<input id="licenseNo" class="reg-input" type="text" placeholder="请输入驾驶证号码" style="width: 50%;" />
-					<label id="licenseRes" class="reg-label">&nbsp;</label>
-				</div>
-				<div class="f-horizontal-line"></div>
+				<div class="f-horizontal-line"></div>-->
 				<div class="clearfix">
 					<label class="reg-label">车牌号码</label>
 					<div class="reg-val">
@@ -62,32 +91,7 @@
 					<span id="carType" class="reg-val">小型车</span>
 				</div>
 			</div>
-			<div class="m-reg-title">
-				<img src="content/images/package.png" /> 套餐选择
-			</div>
-			<div class="m-reg-radio">
-				<form class="mui-input-group">
-					<div class="mui-input-row mui-radio mui-left">
-						<label class="radio-label" for="tc1">套餐1<p><a href="#popover" tc-desc="套餐1包含免费洗车1年，免费维修1年，免费打气3个月，免费送水1个月">396元<img src="content/images/arrow.png"/></a></p></label>
-						<input id="tc1" name="tc" type="radio" value="1" fee="396" checked>
-					</div>
-					<div class="f-horizontal-line"></div>
-					<div class="mui-input-row mui-radio mui-left">
-						<label class="radio-label" for="tc2">套餐2<p><a href="#popover" tc-desc="套餐2包含免费洗车2年，免费维修2年，免费打气6个月，免费送水1个月">700元<img src="content/images/arrow.png"/></a></p></label>
-						<input id="tc2" name="tc" type="radio" value="2" fee="700">
-					</div>
-					<div class="f-horizontal-line"></div>
-					<div class="mui-input-row mui-radio mui-left">
-						<label class="radio-label" for="tc3">套餐3<p><a href="#popover" tc-desc="套餐3包含免费洗车3年，免费维修3年，免费打气9个月，免费送水2个月">1400元<img src="content/images/arrow.png"/></a></p></label>
-						<input id="tc3" name="tc" type="radio" value="3" fee="1400">
-					</div>
-					<div class="f-horizontal-line"></div>
-					<div class="mui-input-row mui-radio mui-left">
-						<label class="radio-label" for="tc4">套餐4<p><a href="#popover" tc-desc="套餐4包含免费洗车5年，免费维修5年，免费打气5个月，免费送水7个月">450元<img src="content/images/arrow.png"/></a></p></label>
-						<input id="tc4" name="tc" type="radio" value="4" fee="450">
-					</div>
-				</form>
-			</div>
+
 			<div class="m-reg-btn">
 				<button type="button" class="mui-btn mui-btn-block" data-loading-text="提交中">提交信息</button>
 			</div>
@@ -191,6 +195,9 @@
 			}, {
 				value: '沪',
 				text: '沪'
+			}, {
+				value: '琼',
+				text: '琼'
 			}];
 			//调用微信JS api 支付
 			function jsApiCall(reqJson) {
@@ -360,6 +367,7 @@
 					var prefix = $("#prefix").text();
 					var tc = $("input[name='tc']:checked").val();
 					var fee = $("input[name='tc']:checked").attr("fee");
+					var vip = $("input[name='tc']:checked").attr("vip");
 					var carType = $("#carType").text();
 
 					if(checkData(username, telephone, birthday, xszNo, licenseNo, carNo)) {
@@ -373,7 +381,7 @@
 					var msg = "会员名称: " + username + "\n手机号码: " + telephone + "\n生日日期: " +
 						birthday + "\n行驶证号码: " + xszNo + "\n驾驶证号码: " +
 						licenseNo + "\n车牌号码: " + carNo + "\n车辆类型: " + carType + "\n选择套餐: " +
-						tc + "\n价格: " + fee + "元";
+						vip + "\n价格: " + fee + "元";
 
 					var btnArray = ['取消', '提交'];
 					mui.confirm(msg, '确认信息', btnArray, function(e) {
@@ -386,16 +394,16 @@
 					})
 				});
 				$("#birthday").click(function(e) {
-					var picker = new mui.DtPicker({
-						type: "date", //设置日历初始视图模式 
-						beginDate: new Date(1950, 0, 01), //设置开始日期 
-						endDate: new Date(), //设置结束日期 
-					});
-					picker.setSelectedValue("1970-01-01");
-					picker.show(function(rs) {
-						$("#birthday").val(rs.text);
-						picker.dispose();
-					});
+					//					var picker = new mui.DtPicker({
+					//						type: "date", //设置日历初始视图模式 
+					//						beginDate: new Date(1950, 0, 01), //设置开始日期 
+					//						endDate: new Date(), //设置结束日期 
+					//					});
+					//					picker.setSelectedValue("1970-01-01");
+					//					picker.show(function(rs) {
+					//						$("#birthday").val(rs.text);
+					//						picker.dispose();
+					//					});
 				});
 				/**
 				 * 失去焦点校验
@@ -404,6 +412,21 @@
 					// 身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X  
 					var reg2 = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
 					var licenseNo = $(this).val();
+
+					if(licenseNo.length == 18) {
+						var year = licenseNo.substring(6, 10);
+						var month = licenseNo.substring(10, 12);
+						var day = licenseNo.substring(12, 14);
+						$("#birthday").val(year + "-" + month + "-" + day);
+					} else if(licenseNo.length == 15) {
+						var year = "19" + licenseNo.substring(6, 8);
+						var month = licenseNo.substring(8, 10);
+						var day = licenseNo.substring(10, 12);
+						$("#birthday").val(year + "-" + month + "-" + day);
+					} else {
+						$("#birthday").val("");
+					}
+
 					if(licenseNo == null || licenseNo == "" || !reg2.test(licenseNo)) {
 						$("#licenseRes").removeClass("test-success");
 						$("#licenseRes").addClass("test-fail");

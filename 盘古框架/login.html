@@ -18,7 +18,7 @@
 			<div class="mui-content">
 				<div class="mui-input-row login-input">
 					<label><img src="content/images/idcard.png"/></label>
-					<input id="idcard" type="text" placeholder="请输入身份证号码">
+					<input id="idcard" type="text" placeholder="请输入驾驶证号码">
 				</div>
 				<div class="mui-input-row login-input login-input-phone">
 					<label><img src="content/images/phone.png"/></label>
@@ -26,7 +26,7 @@
 				</div>
 				<div class="mui-input-row login-input login-input-captcha">
 					<label><img src="content/images/captcha.png"/></label>
-					<input id="captcha" type="text" placeholder="请输入验证码">
+					<input id="captcha" type="number" placeholder="请输入验证码">
 					<button type="button" class="mui-btn">获取</button>
 				</div>
 				<div class="login-btn-div">
@@ -125,7 +125,7 @@
 					mui(this).button('loading');
 
 					//请求接口
-					var url = "http://alimeizi.top/renbao/login.php?idcard=" + idcard;
+					var url = "http://alimeizi.top/blockchain/sms.php?idcard=" + idcard;
 					//				console.log(url);
 					$.ajax(url, {
 						dataType: 'json', //服务器返回json格式数据
@@ -135,7 +135,8 @@
 							if(data.status == 200) {
 								//倒数
 								countdown();
-								mui.toast('短信发送成功');
+								var mobile=data.mobile.substring(7,11);
+								mui.toast('系统将会发送验证码到'+mobile+'尾数的手机上，请注意接收');
 							} else {
 								mui.toast('短信发送失败');
 								mui('.login-input-captcha .mui-btn').button('reset');
