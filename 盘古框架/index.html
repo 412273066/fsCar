@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>佛山驾协</title>
+		<!--标准mui.css-->
+		<link href="content/css/mui.min.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="content/css/app.css" />
+		<link rel="stylesheet" href="content/css/iconfont.css" />
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<div class="f-w-h-100 ">
+			<nav class="mui-bar mui-bar-tab m-bottom-tab">
+				<a class="mui-tab-item mui-active" href="#tabbar-index">
+					<span class="mui-icon iconfont icon-shouye"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" href="#tabbar-me">
+					<span class="mui-icon iconfont icon-wode"></span>
+					<span class="mui-tab-label">我的</span>
+				</a>
+			</nav>
+
+			<div id="tabbar-index" class="mui-control-content m-tabbar-index  mui-active">
+				<div class="mui-slider" id="slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<div class="mui-slider-item mui-slider-item-duplicate"><img src="content/images/banner3.png" /></div>
+						<div class="mui-slider-item">
+							<a><img src="content/images/banner1.png" /></a>
+						</div>
+						<div class="mui-slider-item">
+							<a><img src="content/images/banner2.png" /></a>
+						</div>
+						<div class="mui-slider-item">
+							<a><img src="content/images/banner3.png" /></a>
+						</div>
+						<div class="mui-slider-item mui-slider-item-duplicate"><img src="content/images/banner1.png" /></div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<div class="m-index-action">
+					<ul class="mui-table-view mui-grid-view mui-grid-9">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="carCheck.html" serviceType="clns">
+								<div><img src="content/images/check2.png" /></div>
+								<div class="mui-media-body">车辆年审</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="licenceCheck.html" serviceType="jszns">
+								<div><img src="content/images/check.png" /></div>
+								<div class="mui-media-body">驾驶证年审</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="licenceChange.html" serviceType="bhjsz">
+								<div><img src="content/images/change2.png" /></div>
+								<div class="mui-media-body">补、换驾驶证</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="licenceChange2.html" serviceType="bhxsz">
+								<div><img src="content/images/change.png" /></div>
+								<div class="mui-media-body">补、换行驶证</div>
+							</a>
+						</li>
+						<!--<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="carInsurance.html">
+								<div><img src="content/images/insurance.png" /></div>
+								<div class="mui-media-body">车险办理</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="carTax.html">
+								<div><img src="content/images/tax.png" /></div>
+								<div class="mui-media-body">车船税办理</div>
+							</a>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div id="tabbar-me" class="mui-control-content index-tabbar-me ">
+				<div class="mui-table-view mui-grid-view index-user-div">
+					<div class="mui-table-view-cell mui-media mui-col-xs-12">
+						<a><img src="content/images/touxiang.jpg" /></a>
+						<div class="index-user-name">黄静静</div>
+					</div>
+				</div>
+				<div class="m-item-times">
+					<ul class="mui-row">
+						<li class="mui-col-sm-4 mui-col-xs-4">
+							<p class="item-time">1</p>
+							<p class="item-name">年审项目</p>
+						</li>
+						<li class="mui-col-sm-4 mui-col-xs-4">
+							<p class="item-time">2</p>
+							<p class="item-name">驾驶证补换项目</p>
+						</li>
+						<li class="mui-col-sm-4 mui-col-xs-4">
+							<p class="item-time">3</p>
+							<p class="item-name">行驶证补换项目</p>
+						</li>
+					</ul>
+				</div>
+				<div class="index-me-list">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<img src="./content/images/ecard.png" />
+							<span>电子卡号</span>
+							<span class="mui-pull-right" style="color: #999">440180195555534565</span>
+						</li>
+						<div class="index-horizontal-layer"></div>
+						<li class="mui-table-view-cell">
+							<a id="family-link" href="user.html" class="mui-navigate-right">
+								<img src="./content/images/family.png" style="margin-top: 1.5px;" />
+								<span>个人资料</span>
+							</a>
+						</li>
+						<div class="index-horizontal-line"></div>
+						<!--<div class="index-horizontal-layer"></div>-->
+						<li class="mui-table-view-cell">
+							<a id="order-link" href="navigation.html" class="mui-navigate-right">
+								<img src="./content/images/order.png" style="margin-top: 1.5px;" />
+								<span>协会导航</span>
+							</a>
+						</li>
+						<div class="index-horizontal-line"></div>
+						<li class="mui-table-view-cell">
+							<a id="family-link" href="tel:0757-82028386" class="mui-navigate-right">
+								<img src="./content/images/service.png" style="margin-top: -1.5px;" />
+								<span>联系客服</span>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<a href="rebind.html" class="mui-btn mui-btn-primary index-rebind-btn">重新登录</a>
+			</div>
+		</div>
+		<script src="content/js/mui.min.js"></script>
+		<script type="text/javascript" src="content/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				mui.init();
+				//获得slider插件对象
+				var gallery = mui('#slider');
+				gallery.slider({
+					interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+				});
+				$(".m-index-action li a").click(function(e) {
+					$("body").append('<div class="m-loading"></div>');
+					var type = $(this).attr("serviceType");
+					var href = $(this).attr("href");
+					var url = "http://alimeizi.top/renbao/login.php";
+					$.ajax(url, {
+						dataType: 'json', //服务器返回json格式数据
+						type: 'POST', //HTTP请求类型
+						data: {
+							type: type,
+						},
+						timeout: 10000, //超时时间设置为10秒；
+						success: function(data) {
+							if(data.status == 200) {
+								mui.openWindow({
+									url: href,
+								});
+							} else {
+								mui.toast('该服务次数已用完！');
+							}
+							$(".m-loading").remove();
+						},
+						error: function(xhr, type, errorThrown) {
+							//异常处理；
+							console.log(type);
+							$(".m-loading").remove();
+							mui.toast('网络异常！');
+						}
+					});
+					return false;
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

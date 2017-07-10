@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>车船税办理</title>
+		<!--标准mui.css-->
+		<link href="content/css/mui.min.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="content/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="content/css/fold.css" />
+		<link rel="stylesheet" type="text/css" href="content/css/mui.picker.min.css" />
+		<style type="text/css">
+
+		</style>
+
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider m-slider-tab">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1">
+						<div class="segmentItem-content">
+							办理流程
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item2">
+						<div class="segmentItem-content">
+							办理条件
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item3">
+						<div class="segmentItem-content">
+							所需资料
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item4">
+						<div class="segmentItem-content">
+							热线
+						</div>
+					</a>
+
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<div class="mui-slider-group">
+					<div id="item1" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view process-list">
+							<!--<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">1</span>
+									<span class="cell-title">机动车照相</span>
+								</a>
+								<div class="detail-content">
+									<p>按照规格要求进行车辆牌照，用于申请提交资料。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">2</span>
+									<span class="cell-title">审核及缴费</span>
+								</a>
+								<div class="detail-content">
+									<p>提交所有准备好的资料给车管机构，待审核通过，缴纳相关费用。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">3</span>
+									<span class="cell-title">领取证件</span>
+								</a>
+								<div class="detail-content">
+									<p>在对应窗口直接领取，或选择邮政快递送达新的机动车行驶证。（一般会收取额外邮寄费用）</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>-->
+						</ul>
+						<!--<iframe src="carCheckSub1.html" style="width: 100%;height: 100%;"></iframe>-->
+						<!--<div class="dashed-line"></div>-->
+					</div>
+					<div id="item2" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<!--<p>1、机动车行驶证已经丢失或损毁</p>
+							<p>2、机动车行驶证有效期到期</p>
+							<p>3、机动车所有人信息与身份证一致</p>
+							<p>温馨提示：</p>
+							<p>① 若年审过期，必须办完年审才可补办行驶证；</p>
+							<p>② 机动车必须到场，需要检验车身有无改装；</p>
+							<p>③ 若行驶证损毁，补换时需带上原损毁原件；</p>
+							<p>④ 若行驶证到期，补换时需带上原到期行驶证。</p>
+							<p>机动车行驶证就相当于你的爱车的“身份证”，务必妥善保管~</p>-->
+						</div>
+					</div>
+					<div id="item3" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<p>1、身份证复印件</p>
+							<p>2、新车合格证</p>
+							<p>3、提供新车价格及你需要的险种</p>
+							<p>4、行驶证复印件（非新车需要）</p>
+							<p>5、若是二手车辆，则需提供过户登记证</p>
+							<p>6、若是续保的，还需要提供上一年的保单。</p>
+						</div>
+					</div>
+					<div id="item4" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<p>1.佛山驾协总会热线：0757-82210229</p>
+							<p>2.南庄办事处：0757-82521398</p>
+							<p>3.澜石办事处：0757-83316165</p>
+							<p>4.佛山驾协总会vip热线：0757-82028386</p>
+							<p>5.佛山驾协总会客服手机号码：13902808810</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="footer">
+					<div class="footer-left">
+						<p>
+							¥200
+							<br />
+							<small>代办参考价</small>
+						</p>
+					</div>
+
+					<div class="footer-right">
+						<a>
+							<p>
+								找人代办
+								<br />
+								<small>帮你找，无骚扰</small>
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mui-backdrop datetime-select" id="datetime-select">
+				<div class="datetime-dialog">
+					<div class="dialog-title">
+						请选择预约时间日期
+					</div>
+					<div>
+						<div class="select-item">
+							<span>日期 :</span>
+							<p id="select-date" data-options='{"type":"date"}'>请选择日期</p>
+						</div>
+						<div class="select-item">
+							<span>时间 :</span>
+							<p id="select-time" data-options='{"type":"time"}'>请选择时间</p>
+						</div>
+					</div>
+					<div class="dialog-bottom">
+						<button class="mui-btn" id="btn-cancel">取消</button>
+						<button class="mui-btn" id="btn-comfirm" data-loading-text="提交中">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="content/js/mui.min.js"></script>
+		<script type="text/javascript" src="content/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="content/js/mui.picker.min.js"></script>
+		<script type="text/javascript">
+			mui('.mui-table-view').on('tap', '.mui-table-view-cell', function() {
+				console.log("111");
+				var currentClass = this.className;
+				if(currentClass.indexOf("mui-active") > 0) {
+					this.className = "mui-table-view-cell";
+				} else {
+					this.className = "mui-table-view-cell mui-active";
+				}
+			});
+			(function($) {
+				$('.mui-scroll-wrapper ').scroll({
+					indicators: true //是否显示滚动条
+				});
+
+			})(mui);
+			$("#btn-cancel").click(function(e) {
+				$("#datetime-select").hide();
+			});
+			$("#btn-comfirm").click(function(e) {
+
+				var date = $("#select-date").text();
+				var time = $("#select-time").text();
+				if(date == null || date == "请选择日期") {
+					mui.toast("请选择日期!")
+					reurn;
+				}
+				if(time == null || time == "请选择时间") {
+					mui.toast("请选择时间!")
+					reurn;
+				}
+				mui(this).button('loading');
+				var url = "http://alimeizi.top/renbao/login.php";
+				$.ajax(url, {
+					dataType: 'json', //服务器返回json格式数据
+					type: 'GET', //HTTP请求类型
+					data: {
+						date: date, //日期
+						time: time //时间
+					},
+					timeout: 10000, //超时时间设置为10秒；
+					success: function(data) {
+						if(data.status == 200) {
+							//重置对话框
+							$("#select-date").text("请选择日期");
+							$("#select-time").text("请选择时间");
+							mui('#btn-comfirm').button('reset');
+							$("#datetime-select").hide();
+							mui.toast("提交成功，预约结果将会短信通知，请注意查看。");
+						} else {
+							mui.toast('绑定失败');
+							mui('#btn-comfirm').button('reset');
+						}
+					},
+					error: function(xhr, type, errorThrown) {
+						//异常处理；
+						console.log(type);
+						mui.toast('提交失败');
+						mui('#btn-comfirm').button('reset');
+					}
+				});
+			})
+			$(".footer-right a").click(function(e) {
+				$("#datetime-select").show();
+			});
+			$("#select-date").click(function(e) {
+				var optionsJson = $(this).attr("data-options");
+				var options = JSON.parse(optionsJson);
+				var now = new Date();
+				options.beginYear = now.getFullYear();
+				options.beginMonth = now.getMonth() + 1;
+				options.beginDay = now.getDate();
+				var picker = new mui.DtPicker(options);
+				picker.show(function(rs) {
+					/*
+					 * rs.value 拼合后的 value
+					 * rs.text 拼合后的 text
+					 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+					 * rs.m 月，用法同年
+					 * rs.d 日，用法同年
+					 * rs.h 时，用法同年
+					 * rs.i 分（minutes 的第二个字母），用法同年
+					 */
+					$("#select-date").text(rs.text);
+					/* 
+					 * 返回 false 可以阻止选择框的关闭
+					 * return false;
+					 */
+					/*
+					 * 释放组件资源，释放后将将不能再操作组件
+					 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+					 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+					 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+					 */
+					picker.dispose();
+				});
+			});
+
+			$("#select-time").click(function(e) {
+				var optionsJson = $(this).attr("data-options");
+				var options = JSON.parse(optionsJson);
+				var picker = new mui.DtPicker(options);
+				picker.show(function(rs) {
+					$("#select-time").text(rs.text);
+					picker.dispose();
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

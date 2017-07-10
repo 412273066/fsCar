@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>车辆年审</title>
+		<!--标准mui.css-->
+		<link href="content/css/mui.min.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="content/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="content/css/fold.css" />
+		<style type="text/css">
+			.mui-control-content {
+				background-color: white;
+			}
+			.mui-table-view-cell p{
+				line-height: 1.5em;
+			}
+			.check-explain{
+				padding: 5px 10px;
+			}
+			.check-explain p{
+				line-height: 1.5em;
+				padding: 5px 0;
+			}
+			.mui-slider{
+				height: 100%;
+				overflow-y: scroll;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1">
+						<div class="segmentItem-content">
+							办理流程
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item2">
+						<div class="segmentItem-content">
+							办理条件
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item3">
+						<div class="segmentItem-content">
+							所需资料
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item4">
+						<div class="segmentItem-content">
+							受理机构
+						</div>
+					</a>
+
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<div class="mui-slider-group">
+					<div id="item1" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">1</span>
+									<span class="cell-title">测尾气</span>
+								</a>
+								<div class="detail-content">
+									<p>
+										排队交纳检测费。车辆交由工作人员开上线监测汽车尾气，拿到合格的尾气检测表后直接在相应窗口交钱领尾气合格标；若不合格，需到汽修厂调试后重新上线，需交纳二次检测费。
+									</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">2</span>
+									<span class="cell-title">查违章</span>
+								</a>
+								<div class="detail-content">
+									<p>查询窗口凭行驶证领取并填写“机动车定期检验登记表”，交由工作人员查询违章记录，合格者直接盖章；有违章的，对应窗口尽快处理（提前处理完违章，可节省您的宝贵时间）。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">3</span>
+									<span class="cell-title">交押金</span>
+								</a>
+								<div class="detail-content">
+									<p>押金窗口交纳押金，拿好押金条，领取并填写外观检验单。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">4</span>
+									<span class="cell-title">验外观</span>
+								</a>
+								<div class="detail-content">
+									<p>持外观检验单相关岗位检查交强险有效期，若符合，岗位工作人员会简单检验车辆外观。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">5</span>
+									<span class="cell-title">上线检测</span>
+								</a>
+								<div class="detail-content">
+									<p>车辆排队上线检测，各项检测完毕后领取检测项目表，尤其注意灯光和刹车是否合格，若不合格需当场调试合格，重新盖章。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">6</span>
+									<span class="cell-title">签字，交费及领标</span>
+								</a>
+								<div class="detail-content">
+									<p>总检处签字盖章，各窗口交纳费用，退回押金，在领证处领取机动车检验合格标志、印有有效期的行驶证。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">7</span>
+									<span class="cell-title">异地年审</span>
+								</a>
+								<div class="detail-content">
+									<p>异地年审需先在车辆原注册车管所开具异地年审委托书，其他流程无异。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+						</ul>
+						<!--<div class="dashed-line"></div>-->
+					</div>
+					<div id="item2" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<p>1.车辆无违章，无查封</p>
+							<p>2.车辆无改装</p>
+							<p>3.交强险单在有效期内</p>
+							<p>4.报废车辆不予年检</p>
+							<p>免检政策：免去车辆上线检测环节</p>
+							<p>免检条件：2010年9月1日后注册登记，登记日期距出厂日未超4年；非运营车辆及其它小型运营车辆（不含面包车及7座以上）;未发生过人员伤亡交通事故。</p>
+							<p>免检规则：①免检期间无需上线检测，但需2年领取一次“车辆检验合格标志”，免检期过后恢复上线检测，一年一次。②2012年9月1日后新注册车辆可享受2次6年免检，2010年9月1日至2012年8月31日之间新注册车辆享受1次6年免检。</p>
+							<p>切记：不按照规定进行车辆年审属 违~法~行~为~！</p>
+						</div>
+					</div>
+					<div id="item3" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<p>1.车主身份证原件</p>
+							<p>2.行驶证原件</p>
+							<p>3.有效期内的交强险保单原件</p>
+							<p>4.年审当年的车船税发票原件及复印件</p>
+							<p>5.组织机构代码证（单位车辆需提供，盖公章）原件</p>
+							<p>6.单位委托书1份及被委托人的身份证复印件1份（单位车辆需提供）原件</p>
+							<p>7.如机动车是外省车需到当地车管所开具（委托核发机动车检验合格标志通知书）</p>
+							<p>8.脱审处罚单（仅脱审车辆需要）</p>
+						</div>
+					</div>
+					<div id="item4" class="mui-slider-item mui-control-content ">
+
+					</div>
+
+				</div>
+
+				<div class="bottom">
+
+				</div>
+			</div>
+
+		</div>
+		<script src="content/js/mui.min.js"></script>
+		<script type="text/javascript" src="content/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			mui('.mui-table-view').on('tap', '.mui-table-view-cell', function() {
+				var currentClass = this.className;
+				if(currentClass.indexOf("mui-active") > 0) {
+					this.className = "mui-table-view-cell";
+				} else {
+					this.className = "mui-table-view-cell mui-active";
+				}
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+
+			})(mui);
+		</script>
+
+	</body>
+
+</html>

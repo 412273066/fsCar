@@ -1,0 +1,179 @@
+/*
+ *  mui-slider
+ */
+
+.mui-content {
+	background-color: white;
+	/*overflow-y: scroll;*/
+	height: 100%;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active .segmentItem-content {
+	background-color: #018DD6;
+	color: white;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.mui-slider-indicator.mui-segmented-control {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	background-color: white;
+	border-bottom: 1px solid #c8c7cc;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+	position: fixed;
+	top: 49px;
+	z-index: 101;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item .segmentItem-content {
+	margin: 10px 5%;
+	width: 90%;
+	line-height: 30px;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-bottom: 0;
+	border-top: 0;
+	margin-top: 51px;
+	overflow-y: scroll;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+	background-color: #018DD6;
+}
+
+
+/*
+ *	 mui-table-view
+ */
+
+.sub-dashed-line {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 35px;
+	border-left: 1px dashed #c8c7cc;
+	width: 1px;
+}
+
+.mui-table-view .mui-table-view-cell:first-child .sub-dashed-line {
+	top: 20px;
+}
+
+.mui-table-view .mui-table-view-cell:last-child .sub-dashed-line {
+	bottom: 20px;
+}
+
+
+/*
+ * cell标题的样式 --- 未选中
+ */
+
+.mui-table-view-cell:after {
+	height: 0px;
+}
+
+.mui-table-view-cell {
+	/*margin: 0px 0px;*/
+	margin: 0;
+	padding: 20px 0px;
+	line-height: 40px;
+	z-index: 0;
+	padding: 0 15px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	min-height: 40px;
+	margin: 0 -15px;
+	z-index: 2;
+	padding: 15px 15px;
+}
+
+.mui-table-view-cell .cell-index {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #018DD6;
+	color: #ffffff;
+}
+
+.mui-table-view-cell .cell-title {
+	margin: 0 10px;
+}
+
+.mui-navigate-right:after,
+.mui-push-right:after {
+	content: '\e580';
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	line-height: 26px;
+	border: 1px solid #bbb;
+	font-size: 16px;
+	border-radius: 13px;
+}
+
+
+/*
+ * cell标题的样式 --- 选中
+ */
+
+.mui-table-view-cell.mui-active {
+	background-color: white;
+}
+
+.mui-table-view-cell.mui-active .cell-index {
+	background-color: #f5f5f5;
+	color: #018DD6;
+}
+
+.mui-table-view-cell.mui-active>.mui-navigate-right:after {
+	content: '\e581';
+}
+
+
+/*
+ *	自页面的样式	
+ */
+
+.mui-table-view-cell .detail-content {
+	display: none;
+}
+
+.mui-table-view-cell.mui-active .detail-content {
+	display: block;
+	z-index: 1;
+}
+
+.mui-table-view-cell.mui-active .detail-content p:before {
+	position: absolute;
+	top: -0.5em;
+	border: 10px solid rgba(255, 255, 255, 0);
+	border-top: 0px solid rgba(255, 255, 255, 0);
+	border-bottom: 10px solid #f5f5f5;
+	width: 0;
+	height: 0;
+	content: ' ';
+}
+
+.mui-table-view-cell.mui-active .detail-content {
+	background-color: #f5f5f5;
+	border-radius: 6px;
+	position: relative;
+	margin: 10px 0px 0 0px;
+	padding: 10px 10px;
+}
+
+li:last-child.mui-table-view-cell.mui-active .detail-content {
+	margin-bottom: 10px;
+}

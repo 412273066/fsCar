@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>申请会员</title>
+		<!--标准mui.css-->
+		<link href="content/css/mui.min.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="content/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="content/css/mui.picker.min.css" />
+		<style type="text/css">
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="g-user-info">
+			<div class="m-user-info">
+				<p class="title"><img src="content/images/user-info-tit.png" align="absmiddle" /><span>会员信息</span></p>
+				<ul class="user-item">
+					<li><span class="lab">会员 :</span><input id="userNo" type="text" placeholder="请输入会员编号" /></li>
+					<li><span class="lab">入会日 :</span><input id="inDate" readonly="true" type="text" placeholder="请选择入会日期" /></li>
+					<li><span class="lab">生日 :</span><input type="text" readonly="true" placeholder="请选择您的生日" id="birthday" /></li>
+				</ul>
+			</div>
+			<div class="m-car-info">
+				<p class="title"><img src="content/images/car-info-tit.png" align="absmiddle" /><span>车辆信息</span></p>
+				<ul class="user-item">
+					<li><span class="lab">车主姓名 :</span><input id="username" type="text" placeholder="请输入姓名" /></li>
+					<li><span class="lab">车牌号码 :</span><input id="carNo" type="text" placeholder="请输入车牌号码" />
+					</li>
+					<li><span class="lab">年审有效期 :</span><input id="checkDate" type="text" readonly="true" placeholder="请选择您的年审有效期" /></li>
+					<li><span class="lab">保险有限期 :</span><input id="insuranceDate" type="text" readonly="true" placeholder="请选择您的保险有效期" /></li>
+				</ul>
+			</div>
+			<div class="m-apply-btn">
+				<button type="button" class="mui-btn mui-btn-block">提交申请</button>
+			</div>
+		</div>
+		<script src="content/js/mui.min.js"></script>
+		<script type="text/javascript" src="content/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="content/js/mui.picker.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('input[readonly="true"]').click(function(e) {
+					var optionsJson = '{"type":"date"}';
+					var options = JSON.parse(optionsJson);
+					var picker = new mui.DtPicker(options);
+					picker.show(function(rs) {
+						console.log(rs.text);
+						picker.dispose();
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>

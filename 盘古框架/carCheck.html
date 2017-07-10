@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>车辆年审</title>
+		<!--标准mui.css-->
+		<link href="content/css/mui.min.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="content/css/app.css" />
+		<link rel="stylesheet" type="text/css" href="content/css/fold.css" />
+		<link rel="stylesheet" type="text/css" href="content/css/mui.picker.min.css" />
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider m-slider-tab">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1">
+						<div class="segmentItem-content">
+							办理流程
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item2">
+						<div class="segmentItem-content">
+							办理条件
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item3">
+						<div class="segmentItem-content">
+							所需资料
+						</div>
+					</a>
+
+					<a class="mui-control-item" href="#item4">
+						<div class="segmentItem-content">
+							热线
+						</div>
+					</a>
+
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<div class="mui-slider-group">
+					<div id="item1" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view process-list">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">1</span>
+									<span class="cell-title">测尾气</span>
+								</a>
+								<div class="detail-content">
+									<p>
+										排队交纳检测费。车辆交由工作人员开上线监测汽车尾气，拿到合格的尾气检测表后直接在相应窗口交钱领尾气合格标；若不合格，需到汽修厂调试后重新上线，需交纳二次检测费。
+									</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">2</span>
+									<span class="cell-title">查违章</span>
+								</a>
+								<div class="detail-content">
+									<p>查询窗口凭行驶证领取并填写“机动车定期检验登记表”，交由工作人员查询违章记录，合格者直接盖章；有违章的，对应窗口尽快处理（提前处理完违章，可节省您的宝贵时间）。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">3</span>
+									<span class="cell-title">交押金</span>
+								</a>
+								<div class="detail-content">
+									<p>押金窗口交纳押金，拿好押金条，领取并填写外观检验单。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">4</span>
+									<span class="cell-title">验外观</span>
+								</a>
+								<div class="detail-content">
+									<p>持外观检验单相关岗位检查交强险有效期，若符合，岗位工作人员会简单检验车辆外观。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">5</span>
+									<span class="cell-title">上线检测</span>
+								</a>
+								<div class="detail-content">
+									<p>车辆排队上线检测，各项检测完毕后领取检测项目表，尤其注意灯光和刹车是否合格，若不合格需当场调试合格，重新盖章。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">6</span>
+									<span class="cell-title">签字，交费及领标</span>
+								</a>
+								<div class="detail-content">
+									<p>总检处签字盖章，各窗口交纳费用，退回押金，在领证处领取机动车检验合格标志、印有有效期的行驶证。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right" href="#">
+									<span class="cell-index">7</span>
+									<span class="cell-title">异地年审</span>
+								</a>
+								<div class="detail-content">
+									<p>异地年审需先在车辆原注册车管所开具异地年审委托书，其他流程无异。</p>
+								</div>
+								<div class="sub-dashed-line"></div>
+							</li>
+						</ul>
+						<!--<iframe src="carCheckSub1.html" style="width: 100%;height: 100%;"></iframe>-->
+						<!--<div class="dashed-line"></div>-->
+					</div>
+					<div id="item2" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<p>1.车辆无违章，无查封</p>
+							<p>2.车辆无改装</p>
+							<p>3.交强险单在有效期内</p>
+							<p>4.报废车辆不予年检</p>
+							<p>免检政策：免去车辆上线检测环节</p>
+							<p>免检条件：2010年9月1日后注册登记，登记日期距出厂日未超4年；非运营车辆及其它小型运营车辆（不含面包车及7座以上）;未发生过人员伤亡交通事故。</p>
+							<p>免检规则：①免检期间无需上线检测，但需2年领取一次“车辆检验合格标志”，免检期过后恢复上线检测，一年一次。②2012年9月1日后新注册车辆可享受2次6年免检，2010年9月1日至2012年8月31日之间新注册车辆享受1次6年免检。</p>
+							<p>切记：不按照规定进行车辆年审属 违~法~行~为~！</p>
+						</div>
+					</div>
+					<div id="item3" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<p>1.车主身份证原件</p>
+							<p>2.行驶证原件</p>
+							<p>3.有效期内的交强险保单原件</p>
+							<p>4.年审当年的车船税发票原件及复印件</p>
+							<p>5.组织机构代码证（单位车辆需提供，盖公章）原件</p>
+							<p>6.单位委托书1份及被委托人的身份证复印件1份（单位车辆需提供）原件</p>
+							<p>7.如机动车是外省车需到当地车管所开具（委托核发机动车检验合格标志通知书）</p>
+							<p>8.脱审处罚单（仅脱审车辆需要）</p>
+						</div>
+					</div>
+					<div id="item4" class="mui-slider-item mui-control-content ">
+						<div class="check-explain">
+							<p>1.佛山驾协总会热线：0757-82210229</p>
+							<p>2.南庄办事处：0757-82521398</p>
+							<p>3.澜石办事处：0757-83316165</p>
+							<p>4.佛山驾协总会vip热线：0757-82028386</p>
+							<p>5.佛山驾协总会客服手机号码：13902808810</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="footer">
+					<div class="footer-left">
+						<p>
+							¥200
+							<br />
+							<small>代办参考价</small>
+						</p>
+					</div>
+
+					<div class="footer-right">
+						<a>
+							<p>
+								找人代办
+								<br />
+								<small>帮你找，无骚扰</small>
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mui-backdrop datetime-select" id="datetime-select">
+				<div class="datetime-dialog">
+					<div class="dialog-title">
+						请选择预约时间日期
+					</div>
+					<div>
+						<div class="select-item">
+							<span>日期 :</span>
+							<p id="select-date" data-options='{"type":"date"}'>请选择日期</p>
+						</div>
+						<div class="select-item">
+							<span>时间 :</span>
+							<p id="select-time" data-options='{"type":"time"}'>请选择时间</p>
+						</div>
+					</div>
+					<div class="dialog-bottom">
+						<button class="mui-btn" id="btn-cancel">取消</button>
+						<button class="mui-btn" id="btn-comfirm" data-loading-text="提交中">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="content/js/mui.min.js"></script>
+		<script type="text/javascript" src="content/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="content/js/mui.picker.min.js"></script>
+		<script type="text/javascript">
+			mui('.mui-table-view').on('tap', '.mui-table-view-cell', function() {
+				console.log("111");
+				var currentClass = this.className;
+				if(currentClass.indexOf("mui-active") > 0) {
+					this.className = "mui-table-view-cell";
+				} else {
+					this.className = "mui-table-view-cell mui-active";
+				}
+			});
+			(function($) {
+				$('.mui-scroll-wrapper ').scroll({
+					indicators: true //是否显示滚动条
+				});
+
+			})(mui);
+			$("#btn-cancel").click(function(e) {
+				$("#datetime-select").hide();
+			});
+			$("#btn-comfirm").click(function(e) {
+
+				var date = $("#select-date").text();
+				var time = $("#select-time").text();
+				if(date == null || date == "请选择日期") {
+					mui.toast("请选择日期!")
+					reurn;
+				}
+				if(time == null || time == "请选择时间") {
+					mui.toast("请选择时间!")
+					reurn;
+				}
+				mui(this).button('loading');
+				var url = "http://alimeizi.top/renbao/login.php";
+				$.ajax(url, {
+					dataType: 'json', //服务器返回json格式数据
+					type: 'GET', //HTTP请求类型
+					data: {
+						date: date, //日期
+						time: time //时间
+					},
+					timeout: 10000, //超时时间设置为10秒；
+					success: function(data) {
+						if(data.status == 200) {
+							//重置对话框
+							$("#select-date").text("请选择日期");
+							$("#select-time").text("请选择时间");
+							mui('#btn-comfirm').button('reset');
+							$("#datetime-select").hide();
+							mui.alert("提交成功，预约结果将会短信通知，请注意查看。");
+						} else {
+							if(data.msg != null && data.msg != "") {
+								mui.alert(data.msg);
+							} else {
+								mui.alert('提交失败');
+							}
+							mui('#btn-comfirm').button('reset');
+						}
+					},
+					error: function(xhr, type, errorThrown) {
+						//异常处理；
+						console.log(type);
+						mui.toast('提交失败');
+						mui('#btn-comfirm').button('reset');
+					}
+				});
+			})
+			$(".footer-right a").click(function(e) {
+				$("#datetime-select").show();
+			});
+			$("#select-date").click(function(e) {
+				var optionsJson = $(this).attr("data-options");
+				var options = JSON.parse(optionsJson);
+				var now = new Date();
+				options.beginYear = now.getFullYear();
+				options.beginMonth = now.getMonth() + 1;
+				options.beginDay = now.getDate();
+				var picker = new mui.DtPicker(options);
+				picker.show(function(rs) {
+					/*
+					 * rs.value 拼合后的 value
+					 * rs.text 拼合后的 text
+					 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+					 * rs.m 月，用法同年
+					 * rs.d 日，用法同年
+					 * rs.h 时，用法同年
+					 * rs.i 分（minutes 的第二个字母），用法同年
+					 */
+					$("#select-date").text(rs.text);
+					/* 
+					 * 返回 false 可以阻止选择框的关闭
+					 * return false;
+					 */
+					/*
+					 * 释放组件资源，释放后将将不能再操作组件
+					 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+					 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+					 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+					 */
+					picker.dispose();
+				});
+			});
+
+			$("#select-time").click(function(e) {
+				var optionsJson = $(this).attr("data-options");
+				var options = JSON.parse(optionsJson);
+				var picker = new mui.DtPicker(options);
+				picker.show(function(rs) {
+					$("#select-time").text(rs.text);
+					picker.dispose();
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
